@@ -1,0 +1,19 @@
+<br><br><h1 style="text-align: center; ">WISHLIST</h1>
+
+<div class="container">
+<table class="table" style="color: black; font-weight: bolder;">
+<tr ><th style="text-align: center;">Product Name</th>
+    <th style="text-align: center;">Product Price</th>
+    <th style="text-align: center;">Remove Product</th>
+
+<tr *ngFor="let prd of product" style="text-align: center;"><td>{{prd.name}}</td><td>{{prd.price}}</td>
+
+<td>
+<button  (click)="deleteData(prd.id)"  class="btn btn-sm btn-danger">
+    Delete</button></td>
+
+</tr>
+
+</table>
+
+</div>
